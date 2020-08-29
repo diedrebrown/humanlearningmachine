@@ -1,0 +1,231 @@
+/*BODY*/
+body{
+	margin-top:100px;
+}
+
+
+/*TYPOGRAPHY*/
+p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	line-height: 2.2em;
+	letter-spacing: 0.01em;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+h1{
+    padding-top: 30px;
+	font-family: 'Roboto Mono', monospace;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+h2{
+	font-family: 'Roboto Mono', monospace;
+    margin-left: 300px;
+	margin-right: 300px;
+}
+
+h3{
+	font-family: 'Roboto Mono', monospace;
+}
+
+/*author*/
+h4{
+  font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    margin-left: 300px;
+	margin-right: 300px;
+    margin-top: auto;
+}
+
+h5{
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 300px;
+	margin-right: 300px;
+     font-style: italic;
+ 
+}
+
+h6{
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    text-align: center;
+}
+
+
+ol{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 2.2em;
+    letter-spacing: 0.01em;
+    margin-left: 300px;
+    margin-right: 300px;
+    list-style-type: circle;
+    display: block;
+    
+}
+
+/*LOGO*/
+#logo{
+    position: relative;
+    float: left;
+    margin-left: 50px; 
+    padding-bottom: 50px;
+}
+
+/*MENU*/
+#navtable{
+    position: relative;
+    font-family: 'Roboto Mono', monospace; 
+    padding: 40px;
+    font-size: 24px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+li{
+display: inline;
+padding: 10px;
+}
+
+
+
+/*DATACREATE*/
+#datacreate{
+	color: #000000;
+	line-height: 35px;
+	font-family: "Roboto Mono", "monospace";
+	font-size: 24px;
+	font-weight: normal;
+	font-style: normal;
+	text-align: left;
+	display: inline-block;
+	width: 1280px;
+	left: 222px;
+	padding-bottom: 20px;
+}
+
+
+/*BIO*/
+
+.bio{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.headshotr{
+	position: relative;
+	float: right;
+	width: 500px;
+	padding-left: 50px;
+    padding-top: 50px;
+}
+.headshotl{
+	position: relative;
+    float: left;
+    width: 300px;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+
+
+/*PROJECT REFERENCES*/
+#references{
+	padding: 20px;
+	list-style: disc;
+	position: relative;
+	width: 1280px;
+    text-indent: inherit;
+	line-height: 35px;
+	list-style-position: inside;
+	text-align: left;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: lighter;
+	color: #000000;
+}
+li{
+    display: inline;
+    padding: 10px;
+    list-style: circle;
+}
+
+
+/*PAGE FOOTER*/
+#footer{
+		position: relative;
+		display: block;
+		bottom: 20px;
+		height: 2.5em;
+        padding-right: 20px;
+    padding-top: 70px;
+		text-align: right;
+		font-family: 'Roboto Mono', monospace;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: .8em;
+}
+
+
+/* unvisited link */
+a:link {
+  color: cadetblue;
+}
+
+/* visited link */
+a:visited {
+  color: indianred;
+}
+
+/* mouse over link */
+a:hover {
+  color: midnightblue;
+}
+
+/* selected link */
+a:active {
+  color: midnightblue;
+}
+
+/*OTHERS*/
+
+.quote{
+	margin-left: 344px;
+	margin-right: 344px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.animation{
+	margin-right: 300px; 
+	margin-left: 765px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.iframe{
+    padding-top: 50px;
+    margin-right: auto;
+	margin-left: auto;   
+    text-align: center;
+    border: none;
+} 
+
+.image{
+    padding-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+    text-align: center;
+}
+
+.icon{
+    padding-top: 30px;
+    text-align: center;
+    margin-right: auto;
+	margin-left: auto;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html><!--THIS IS HEADER REQUIRED BEGIN-->
+<html lang="en">
+	<head>
+    <title>The Process of Machine Learning</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+    
+	<body>
+		<div id="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+		</div>
+
+		<div id="navtable">
+            <ul>
+            <li><a href="index.html">ML 101</a></li>
+            <li><a href="happening.html">HAPPENING</a></li>
+            <li><a href="dataml.html">DATA ML</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            </ul>
+		</div><!--THIS IS HEADER REQUIRED END-->
+
+
+	<div id="processpgintro"><!--PAGE INTRO-->
+		 <div id="mlimgs" style="margin-left: 400px;">
+			<a title="classification by Product Pencil from the Noun Project"><img src="assets/noun_classification_2424491.png" alt="classification by Product Pencil from the Noun Project"></a>
+			<a title="Iris by Phạm Thanh Lộc from the Noun Project"><img  src="assets/noun_Iris_2803373.png" alt="Iris by Phạm Thanh Lộc from the Noun Project"></a>
+			<a title="k-means clustering by Product Pencil from the Noun Project"><img src="assets/noun_k-means_clustering_2424487.png" alt="k-means clustering by Product Pencil from the Noun Project"></a>
+		</div>
+		<h1>Machine Learning with the Iris Dataset</h1>
+        <h4>By Diedre Brown</h4>
+		<p>Machine learning is far too broad of a topic to discuss on this website alone. To help you gain knowledge on the subject, this page will discuss the two appproaches to <a href="index.html">supervised and unsupervised machine learning, and provide an example of at least one technique.</a> 
+			We hope that by demonstrating these techniques, you will:</p>
+			<div><table style="width: 800px; position: relative; margin-left: 300px; margin-right: 300px; font-family: 'Roboto Mono', monospace;">
+				<tr><td>🖥 Learn some Machine Learning terminology.</td></tr>
+				<tr><td>🖥 Know that the two most popular machine learning programming languages are <a href="https://www.python.org">Python</a> and <a href="https://www.r-project.org">R</a>/<a href="https://rstudio.com">R Studio</a>. (For this demonstration of machine learning, we will be using R.)</td></tr>
+				<tr><td>🖥 Have some knowledge to the types of machine learning and be able to discern between <a href="#supervisedml">supervised and unsupervised learning.</a></td></tr>
+				<tr><td>🖥 Impress your friends at parties with your machine learning prowess!</td></tr>
+				</table> 
+			</div>
+	</div><!--END OF PG INTRO-->
+	<div><!--IRIS DATA SET EDA AND SUPERVISED ML-->
+			<p>To start, let's look at some data. Click the <strong>Run</strong> button below to view the famous <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Fisher-Anderson Iris Flower Dataset</a>. </p>
+			<div id="iriseda"><!--EDA OF IRIS DATA IN R-->
+				<iframe width="100%" height="800" src="https://rdrr.io/snippets/embed/?code=%23%23%23%23HUMAN%20LEARNING%20%3CMACHINE%3E%23%23%23%23%0A%23This%20R%20code%20was%20created%20to%20illustrate%20an%20example%20of%20machine%20learning%20for%20the%20project%20website%20human%20learning%20machine.%0A%23All%20data%20used%20are%20from%20built%20in%20packages%20in%20R.%0A%0A%23%23%23%23LOAD%20LIBRARIES%20AND%20DATA%23%23%23%23%0Alibrary(ggthemes)%0Alibrary(tidyverse)%0Alibrary(dplyr)%0A%0A%23%23%23%23THE%20IRIS%20DATASET%23%23%23%23%0Adata(%22iris%22)%20%23accesss%20the%20dataset%0Ahead(iris)%20%23view%20the%20first%20observations%20of%20the%20dataset%0Aglimpse(iris)%20%23understand%20the%20dataset's%20dimensions%20and%20variable%20types%0Asum(is.na(iris))%20%23check%20for%20null%20variables%0Asummary(iris)%20%23get%20a%20summary%20of%20%0Aggplot(iris%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2Ccolor%3DSpecies))%20%2B%20geom_point()%2B%0A%20%20labs(title%20%3D%20%22Sepal%20Length%20by%20Sepal%20Width%20(cm)%20in%20the%20Fisher-Anderson%20Iris%20Dataset%22)%0A" frameborder="0"></iframe>
+				<div style="margin-left: 25%;">
+						<a title="Fisher-Anderson Iris Flower Dataset"><img src="assets/IrisDatasetOverview.png" alt="Fisher-Anderson Iris Flower Dataset"></a>
+				</div>
+			</div>
+			<div id="supervisedml"><!--START SUPERVISED-->
+				<h1>Supervised Machine Learning</h1>
+				<p>Using a few functions, we were able to find out that the dataset contains <strong>150 observations (the rows) and 5 variables (the columns Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, and Species, respectively).</strong> 
+				Because our dataset is small and what is known as <strong>labeled data</strong> (data collected by human experts who know how to distinguish between the three species of irises), it is easy for us to see the distinctions between the species, and make informed guesses about our data.</p>
+				<p>This process of separating data based on categorical variables is called <strong>CLASSIFICATION</strong>. Now imagine this dataset contained thousands of recorded observations. Suddenly, the process of classifying the species of irises gets much more complicated.
+				Thankfully, classification is a great job for a machine learning algorithm! And any method or algorithm that classifies is called a <strong>classifier</strong>. 
+				Classification is a method of <strong>supervised machine learning</strong> because you are using labeled data "to identify similarities or differences, or calculate trends for predictions"<a href="references.html"> (McSweeney)</a>. Other forms of supervised learning include making <strong>decision trees</strong> and <strong>regression modeling</strong>.
+				Like classification, decision trees use labeled data to create a flow chart structure to visualize data observations on their common features. Whereas, regression creates a line of best fit to predict the value of one variable based on the other. Types of regression include linear, multiple, and logistic.</p>
+				<div><table style="width: 800px; position: relative; margin-left: 300px; margin-right: 300px; font-family: 'Roboto Mono', monospace;">
+						<tr><td>This is what a decision tree looks like.</td>
+							<td><a title="decision tree by Product Pencil from the Noun Project"><img src="assets/noun_decision_tree_2424484.png" alt="decision tree by Product Pencil from the Noun Project"></a></td>
+						</tr>
+						<tr><td>This is an example of a linear regression.</td>
+							<td><a title="linear regression by Becris from the Noun Project"><img src="assets/noun_linear_regression_2475101.png" alt="linear regression by Becris from the Noun Project"></a></td>
+						</tr>
+					</table>
+				</div>
+			</div><!--END SUPERVISED-->
+
+			<div id="unsupervisedml"><!--START UNSUPERVISED-->
+				<h1>Unsupervised Machine Learning</h1>
+				<p>Now suppose we didn't have a species variable in our iris dataset? How would we be able to know that this data represented three different species (or groupings) of irises? That's where <strong>unsupervised learning</strong> comes in.</p>
+				<p>Unlike supervised machine learning, unsupervised learning examines <strong>unlabeled data</strong> and groups observations based on points of maximum similarity and points of maximum differences.
+				There are two main types of unsupervised learning--<strong>CLUSTERING</strong> and <strong>DIMENSIONALITY REDUCTION</strong>. Unlike classification, clustering forms bunches of data observations called <strong>clusters</strong> around these points of similarity and difference.
+				Dimensionality reduction, however, looks at ways to reduce the amount of random variables being considered. It does this through a process called <strong>feature selection</strong>, which looks for subsets of variables within a dataset.</p> 
+				<p>Below we will look at an example of clustering with the k-means algorithm to find compactness and maximum separation between three species of iris flowers from the Fisher-Anderson Iris Flower Dataset.</p> 
+					<div id="irisclusteringcode"><!--CLUSTERING R CODE-->
+						<iframe width="100%" height="800" src="https://rdrr.io/snippets/embed/?code=%23%23%23%23HUMAN%20LEARNING%20%3CMACHINE%3E%23%23%23%23%0A%23This%20R%20code%20was%20created%20to%20illustrate%20an%20example%20of%20machine%20learning%20for%20the%20project%20website%20human%20learning%20machine.%0A%23All%20data%20used%20are%20from%20built%20in%20packages%20in%20R.%0A%0A%23%23%23%23LOAD%20PACKAGES%20AND%20LIBRARIES%23%23%23%23%0Alibrary(ggplot2)%0Alibrary(ggthemes)%0Alibrary(tidyverse)%0Alibrary(rpart)%0Alibrary(rpart.plot)%0Alibrary(rattle)%0Alibrary(RColorBrewer)%0Alibrary(class)%0Alibrary(factoextra)%0A%0A%23%23%23%23THE%20IRIS%20DATASET%23%23%23%23%0Adata(%22iris%22)%20%23accesss%20the%20dataset%0A%0A%23%23%23%23CLUSTERING%20WITH%20THE%20IRIS%20DATASET%23%23%23%23%0Aset.seed(1234)%20%23A%20random%20number%20generator%20%0Airis_parts%20%3C-%20iris%20%5B%2C1%3A4%5D%20%23Create%20a%20dataframe%20that%20contains%20all%20the%20variables%20except%20Species%20of%20the%20Iris%20Dataset%0Airis_species%20%3C-%20iris%24Species%20%23Create%20a%20factor%20containing%20just%20the%20iris%20species%0A%0Akmeans_iris%20%3C-%20kmeans(iris_parts%2C%20centers%20%3D%203%2C%20nstart%20%3D%2010)%20%23Use%20the%20k-means%20function%20to%20find%20the%20clusters%20of%20data%20after%20'reviewing'%20it%2010%20times%0Akmeans_iris%20%23After%20restarting%2010%20times%2C%20R%20reports%20the%20average%20of%20cluster%20sizes" frameborder="0"></iframe>
+					</div>
+				<p>From R's report, we see that the k-means function found 3 clusters within this dataset.</p>
+				<p><a title="clustering k-means report"><img src="assets/iriskmeans-1.png" alt="k-means report"></a> </p>	
+				<p>Let's create a table called a <strong>confusion matrix</strong>, which uses <strong>decision boundaries</strong> to separate data by the calculated maximum separation between the three groups. From the k-means values, we can create a chart to visualize this separation.</p>	
+					<div id="irisconfusionmatrix"><!--CONFUSION MATRIX AND CHART R CODE-->
+						<iframe width="100%" height="800" src="https://rdrr.io/snippets/embed/?code=%23%23%23%23HUMAN%20LEARNING%20%3CMACHINE%3E%23%23%23%23%0A%23This%20R%20code%20was%20created%20to%20illustrate%20an%20example%20of%20machine%20learning%20for%20the%20project%20website%20human%20learning%20machine.%0A%23All%20data%20used%20are%20from%20built%20in%20packages%20in%20R.%0A%0A%23%23%23%23LOAD%20PACKAGES%20AND%20LIBRARIES%23%23%23%23%0Alibrary(ggplot2)%0Alibrary(ggthemes)%0Alibrary(tidyverse)%0Alibrary(rpart)%0Alibrary(rpart.plot)%0Alibrary(rattle)%0Alibrary(RColorBrewer)%0Alibrary(class)%0Alibrary(factoextra)%0A%0A%23%23%23%23THE%20IRIS%20DATASET%23%23%23%23%0Adata(%22iris%22)%20%23accesss%20the%20dataset%0A%0A%23%23%23%23CLUSTERING%20WITH%20THE%20IRIS%20DATASET%23%23%23%23%0Aset.seed(1234)%20%23A%20random%20number%20generator%20%0Airis_parts%20%3C-%20iris%20%5B%2C1%3A4%5D%20%23Create%20a%20dataframe%20that%20contains%20all%20the%20variables%20except%20Species%20of%20the%20Iris%20Dataset%0Airis_species%20%3C-%20iris%24Species%20%23Create%20a%20factor%20containing%20just%20the%20iris%20species%0A%0Akmeans_iris%20%3C-%20kmeans(iris_parts%2C%20centers%20%3D%203%2C%20nstart%20%3D%2010)%20%23Use%20the%20k-means%20function%20to%20find%20the%20clusters%20of%20data%20after%20'reviewing'%20it%2010%20times%0A%0Atable(iris_species%2C%20kmeans_iris%24cluster)%23Let's%20have%20R%20tabulate%20a%20confusion%20matrix%20to%20see%20where%20decision%20boundaries%20where%20made%20and%20how%20R%20evaluated%20which%20irises%20belonged%20to%20each%20of%20the%20three%20species%0Aplot(Petal.Length%20~%20Petal.Width%2C%20data%20%3D%20iris_parts%2C%20col%20%3D%20kmeans_iris%24cluster)%20%23Create%20a%20chart%20of%20the%20result%20of%20kmeans%20clustering%20to%20illustrate%20how%20the%20classifer%20performed%0A%0Afviz_cluster(kmeans_iris%2C%20data%20%3D%20iris_parts)%20%23visualize%20with%20the%20factoextra%20package" frameborder="0"></iframe>
+					</div>	
+				<p>The confusion matrix and the decision boundaries plot shown below illustrate that there were was one boundary line which separated the setosa species clearly. The border line between the virginica and versicolor species clearly indicates that there was overlap between the two species.</p>					
+					<div style="margin-left: 25%;"><!--CONFUSION MATRIX AND DECISION BOUNDARY CHART IMAGES-->
+						<a title="confusion matrix"><img src="assets/irisconfusmx.png" alt="Iris Confusion Matrix"></a>
+						<a title="decision boundaries"><img src="assets/iriskmeansclustering.png" alt="Iris Decision Boundaries"></a>
+					</div>
+				<p>From the decision boundaries chart and the clustering chart, we can see the result of kmeans clustering, which illustrates how the agent performed.</p>
+				<p style="margin-left: 25%;"><!--CLUSTERING CHART IMAGE-->
+				<a title="clustering chart"><img src="assets/irisclusterplot.png" alt="Cluster Plot"></a></p>
+			</div><!--END UNSUPERVISED-->
+
+	</div>
+	
+	<!--FOOTER-->
+	<div id="footer">
+		© human learning machine by Woo🐴, Lewis🐓, Brown🐕, 2019
+	</div>
+</body>
+</html>
