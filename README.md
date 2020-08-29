@@ -2,11 +2,11 @@
 <strong><em>[human learning machine]</em></strong> is an informational website that aims to demystify the topic of machine learning for anyone--novice to professional--curious about the subject and its wider implications on human life, and in the larger field of artificial intelligence.
 
 <h2>The Designers</h2><br>
-<a href="https://www.jihyewoo.com/about">Jihye Woo</a>
-<a>Michael Lewis</a>
-<a href="https://www.diedrebrown.com">Diedre Brown</a?
+<a href="https://www.jihyewoo.com/about">Jihye Woo</a><br>
+<a>Michael Lewis</a><br>
+<a href="https://www.diedrebrown.com">Diedre Brown</a><br>
 
-***
+<strong>************************</strong>
 
 <h2>Topic Overview</h2>
 <p>As a group consisting of Information Experience Design and Data Analysis and Visualization students at the School of Information at Pratt Institute, we share an interest in the applications of information technology,specifically machine learning, which is one of today’s most rapidly growing technical fields. Our website aims to demystify the topic of machine learning for anyone--novice to professional--curious about the subject and its wider implications on human life, and in the larger field of artificial intelligence.</p>
